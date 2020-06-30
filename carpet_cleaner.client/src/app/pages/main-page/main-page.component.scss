@@ -1,0 +1,59 @@
+@import "src/page-max-size";
+@import "src/variables";
+
+.img {
+  width: 95px;
+  height: 95px;
+  cursor: pointer;
+}
+
+.thanks-img {
+   width: 150px;
+   height: 150px;
+ }
+
+.thanks-text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.img:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.btn-green {
+  color: white;
+  background-color: $app-green;
+  border-color: $app-green;
+  padding: 7px 12px;
+}
+
+.btn-yellow {
+  color: white;
+  background-color: $app-yellow;
+  border-color: $app-yellow;
+  padding: 7px 12px;
+}
+
+.btn-red {
+  color: white;
+  background-color: $app-red;
+  border-color: $app-red;
+  padding: 7px 12px;
+}
+
+.btn-rounded {
+  border-radius: 5px;
+}
+
+.btn:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+

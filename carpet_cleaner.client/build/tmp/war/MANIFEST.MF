@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Implementation-Title: carpet_cleaner.client
+Implementation-Version: 1.0
+Implementation-Vendor: nu
+Created-By: seiit
+Created-At: 2020-06-30/14:04:08
+

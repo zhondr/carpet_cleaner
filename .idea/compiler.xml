@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="kz.nu.carpet_cleaner.carpet_cleaner.client.main" target="1.8" />
+      <module name="kz.nu.carpet_cleaner.carpet_cleaner.client.test" target="1.8" />
+      <module name="kz.nu.carpet_cleaner.carpet_cleaner.controller.main" target="1.8" />
+      <module name="kz.nu.carpet_cleaner.carpet_cleaner.controller.test" target="1.8" />
+      <module name="kz.nu.carpet_cleaner.carpet_cleaner.main" target="1.8" />
+      <module name="kz.nu.carpet_cleaner.carpet_cleaner.register.main" target="1.8" />
+      <module name="kz.nu.carpet_cleaner.carpet_cleaner.register.test" target="1.8" />
+      <module name="kz.nu.carpet_cleaner.carpet_cleaner.test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

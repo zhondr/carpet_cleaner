@@ -1,0 +1,26 @@
+<app-divider-block>
+  <divider-block-header>
+    <app-header-text [needLogout]="false" [text]="'enterIIN'|translate"></app-header-text>
+  </divider-block-header>
+  <divider-block-body class="w-100 h-50 d-flex align-items-center">
+    <form class="flex-column mx-auto w-75 justify-content-end" [formGroup]="loginForm"
+          (ngSubmit)="onSubmit()">
+      <div></div>
+
+      <div class="form-group mx-auto col-sm-8 flex-column justify-content-end">
+        <input type="text" formControlName="iin" class="form-control flat-input" placeholder="{{'enterIIN'| translate}}"
+               autocomplete="iin" [ngClass]="{ 'is-invalid': submitted && f.iin.errors }"/>
+        <div *ngIf="submitted && f.iin.errors" class="invalid-feedback">
+          <div *ngIf="f.iin.errors.required">{{'enterIINErrorMessage'| translate}}</div>
+        </div>
+      </div>
+
+      <div class="flex-column justify-content-end">
+        <button [disabled]="loading" class="btn btn-orange btn-rounded col-sm-2 mx-auto d-block">
+          <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
+          {{'enter'| translate}}
+        </button>
+      </div>
+    </form>
+  </divider-block-body>
+</app-divider-block>

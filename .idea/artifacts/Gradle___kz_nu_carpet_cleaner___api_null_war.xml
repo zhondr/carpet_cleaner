@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Gradle : kz.nu.carpet_cleaner : api_null.war">
+    <output-path>$PROJECT_DIR$/carpet_cleaner.register/build/libs</output-path>
+    <properties id="gradle-properties">
+      <options external-project-path="$PROJECT_DIR$" />
+    </properties>
+    <root id="archive" name="api_null.war">
+      <element id="artifact" artifact-name="Gradle : kz.nu.carpet_cleaner : api_null.war (exploded)" />
+    </root>
+  </artifact>
+</component>

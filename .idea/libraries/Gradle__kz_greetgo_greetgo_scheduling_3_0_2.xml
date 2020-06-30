@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: kz.greetgo:greetgo.scheduling:3.0.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/kz.greetgo/greetgo.scheduling/3.0.2/31504314b2396590504e3749bb425b460d6d682c/greetgo.scheduling-3.0.2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/kz.greetgo/greetgo.scheduling/3.0.2/97e085c0f44cae2a06d27c42d3392f07fad6df5b/greetgo.scheduling-3.0.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/kz.greetgo/greetgo.scheduling/3.0.2/d1d8885de5211241de26a4b1b0f066561ddeb6f5/greetgo.scheduling-3.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

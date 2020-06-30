@@ -1,0 +1,11 @@
+pluginManagement {
+	repositories {
+		gradlePluginPortal()
+	}
+}
+
+rootProject.name = 'carpet_cleaner'
+
+include "carpet_cleaner.client"
+include "carpet_cleaner.controller"
+include "carpet_cleaner.register"

@@ -1,0 +1,55 @@
+plugins {
+    id 'org.hidetake.ssh' version '2.10.1'
+}
+configurations {
+    all*.exclude group: "org.springframework.boot", module: "spring-boot-starter-logging"
+    all*.exclude group: "ch.qos.logback"
+    all*.exclude group: "org.slf4j", module: "log4j-over-slf4j" // allow using log4j 2.x
+    all*.exclude group: "org.slf4j", module: "slf4j-simple"     // log4j is the configured backend
+}
+
+dependencies {
+    compile project(':carpet_cleaner.controller')
+    compile "kz.greetgo.conf:greetgo.conf:$greetgoConfVersion"
+    compile group: 'org.liquibase', name: 'liquibase-core', version: '3.5.1'
+    compile("org.springframework.boot:spring-boot-starter-jdbc:$springVersion")
+    compile("org.mybatis.spring.boot:mybatis-spring-boot-starter:2.0.0")
+
+    compile "kz.greetgo.util:greetgo.util:$greetgoUtilVersion"
+    compile "kz.greetgo:greetgo.scheduling:$greetgoSchedulingVersion"
+
+    compile "org.postgresql:postgresql:$postgresJdbcVersion"
+    compile 'mysql:mysql-connector-java:8.0.16'
+
+    // JPush
+    compile 'cn.jpush.api:jpush-client:3.3.11'
+    compile 'com.google.code.gson:gson:2.8.2'
+    compile 'cn.jpush.api:jiguang-common:1.0.8'
+    compile 'io.netty:netty-all:4.1.6.Final'
+    compile 'org.slf4j:slf4j-api:1.7.7'
+
+    testCompile("org.springframework.boot:spring-boot-starter-test:$springVersion")
+    testCompile "kz.greetgo.conf:greetgo.sys_params:$greetgoConfVersion"
+
+    compile group: 'kz.greetgo', name: 'greetgo.email', version: "$greetgoEmailVersion"
+    compile group: 'kz.greetgo', name: 'greetgo.email.from_spring', version: "$greetgoEmailVersion"
+    testCompile group: 'org.mockito', name: 'mockito-core', version: '2.22.0'
+}
+
+test {
+    systemProperty 'spring.profiles.active', 'DEV'
+}
+
+webAppDirName = 'webapps'
+
+war {
+    enabled = true
+    archiveName "api_${version}.war"
+
+    addExcludes rootSpec
+}
+
+static def addExcludes(rootSpec) {
+    rootSpec.exclude 'ant-*.jar'
+    rootSpec.exclude 'ant-launcher-*.jar'
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
+
+  <changeSet author="maxim" id="aix-migration">
+    <sql endDelimiter=";;"><![CDATA[
+
+  
+      create table parent_post(
+        id integer not null primary key
+      ); ;;
+      
+      
+      create table wp_post(
+        id integer not null primary key, 
+        post_author integer,
+        post_date timestamp without time zone,
+        post_content text,
+        post_status varchar(20),
+        post_title text,
+        post_name varchar(200), 
+        post_type varchar(100),
+        parent_post integer references parent_post(id), 
+        language_code varchar(10)
+       ); ;;
+       
+    ]]></sql>
+  </changeSet>
+
+</databaseChangeLog>

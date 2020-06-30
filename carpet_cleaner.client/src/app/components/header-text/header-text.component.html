@@ -1,0 +1,8 @@
+<div class="d-flex header-height justify-content-end align-items-center">
+    <span class="pb-0 mb-0 header-text text-wrap text-center text-truncate mh-100">
+      {{text}}
+    </span>
+  <div *ngIf="needLogout" class="navbar-nav header-links">
+    <a (click)="logout()" class="nav-item nav-link">{{'exit'|translate}}</a>
+  </div>
+</div>

@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration>
+
+  <appender name="CONSOLE" class="org.apache.log4j.ConsoleAppender">
+    <errorHandler class="org.apache.log4j.helpers.OnlyOnceErrorHandler"/>
+    <param name="Target" value="System.out"/>
+    <param name="Threshold" value="DEBUG"/>
+
+    <layout class="kz.greetgo.service_bus.controller.logging.MyLog4jLayout">
+      <param name="LoggerNameCut" value="2"/>
+    </layout>
+  </appender>
+
+
+  <appender name="SERVER" class="org.apache.log4j.RollingFileAppender">
+    <param name="File" value="${user.home}/aix_service_bus.d/logs/server.log"/>
+    <param name="Threshold" value="INFO"/>
+    <param name="Append" value="true"/>
+    <param name="MaxFileSize" value="100MB"/>
+    <param name="MaxBackupIndex" value="100"/>
+
+    <layout class="kz.greetgo.service_bus.controller.logging.MyLog4jLayout">
+      <param name="LoggerNameCut" value="0"/>
+    </layout>
+  </appender>
+
+  <appender name="SERVICE.MARKET_WATCH" class="org.apache.log4j.RollingFileAppender">
+    <param name="File" value="${user.home}/aix_service_bus.d/logs/trace/service/market_watch/market_watch_trace.log"/>
+    <param name="Threshold" value="TRACE"/>
+    <param name="Append" value="true"/>
+    <param name="MaxFileSize" value="50MB"/>
+    <param name="MaxBackupIndex" value="7"/>
+
+    <layout class="kz.greetgo.service_bus.controller.logging.MyLog4jLayout">
+      <param name="LoggerNameCut" value="1"/>
+    </layout>
+  </appender>
+
+  <appender name="SERVICE.WEB_ADMIN" class="org.apache.log4j.RollingFileAppender">
+    <param name="File" value="${user.home}/aix_service_bus.d/logs/trace/service/web_admin/web_admin_trace.log"/>
+    <param name="Threshold" value="TRACE"/>
+    <param name="Append" value="true"/>
+    <param name="MaxFileSize" value="50MB"/>
+    <param name="MaxBackupIndex" value="7"/>
+
+    <layout class="kz.greetgo.service_bus.controller.logging.MyLog4jLayout">
+      <param name="LoggerNameCut" value="1"/>
+    </layout>
+  </appender>
+
+  <appender name="SERVICE.INDEXES" class="org.apache.log4j.RollingFileAppender">
+    <param name="File" value="${user.home}/aix_service_bus.d/logs/trace/service/index/indexes.log"/>
+    <param name="Threshold" value="TRACE"/>
+    <param name="Append" value="true"/>
+    <param name="MaxFileSize" value="50MB"/>
+    <param name="MaxBackupIndex" value="7"/>
+
+    <layout class="kz.greetgo.service_bus.controller.logging.MyLog4jLayout">
+      <param name="LoggerNameCut" value="1"/>
+    </layout>
+  </appender>
+
+  <appender name="SERVICE.AIX" class="org.apache.log4j.RollingFileAppender">
+    <param name="File" value="${user.home}/aix_service_bus.d/logs/trace/service/aix/aix_trace.log"/>
+    <param name="Threshold" value="TRACE"/>
+    <param name="Append" value="true"/>
+    <param name="MaxFileSize" value="50MB"/>
+    <param name="MaxBackupIndex" value="7"/>
+
+    <layout class="kz.greetgo.service_bus.controller.logging.MyLog4jLayout">
+      <param name="LoggerNameCut" value="1"/>
+    </layout>
+  </appender>
+
+  <appender name="SERVICE.ACS" class="org.apache.log4j.RollingFileAppender">
+    <param name="File" value="${user.home}/aix_service_bus.d/logs/trace/service/acs/acs_trace.log"/>
+    <param name="Threshold" value="TRACE"/>
+    <param name="Append" value="true"/>
+    <param name="MaxFileSize" value="50MB"/>
+    <param name="MaxBackupIndex" value="7"/>
+
+    <layout class="kz.greetgo.service_bus.controller.logging.MyLog4jLayout">
+      <param name="LoggerNameCut" value="1"/>
+    </layout>
+  </appender>
+
+  <appender name="SERVICE.CSD" class="org.apache.log4j.RollingFileAppender">
+    <param name="File" value="${user.home}/aix_service_bus.d/logs/trace/service/csd/csd_trace.log"/>
+    <param name="Threshold" value="TRACE"/>
+    <param name="Append" value="true"/>
+    <param name="MaxFileSize" value="50MB"/>
+    <param name="MaxBackupIndex" value="10"/>
+
+    <layout class="kz.greetgo.service_bus.controller.logging.MyLog4jLayout">
+      <param name="LoggerNameCut" value="1"/>
+    </layout>
+  </appender>
+
+  <appender name="MIGRATION.CSD" class="org.apache.log4j.RollingFileAppender">
+    <param name="File" value="${user.home}/aix_service_bus.d/logs/trace/migration/csd/trace.log"/>
+    <param name="Threshold" value="TRACE"/>
+    <param name="Append" value="true"/>
+    <param name="MaxFileSize" value="50MB"/>
+    <param name="MaxBackupIndex" value="10"/>
+
+    <layout class="kz.greetgo.service_bus.controller.logging.MyLog4jLayout">
+      <param name="LoggerNameCut" value="1"/>
+    </layout>
+  </appender>
+
+  <appender name="POST.MIGRATION" class="org.apache.log4j.RollingFileAppender">
+    <param name="File"
+      value="${user.home}/aix_service_bus.d/logs/trace/migration/post/post_trace.log"/>
+    <param name="Threshold" value="TRACE"/>
+    <param name="Append" value="true"/>
+    <param name="MaxFileSize" value="50MB"/>
+    <param name="MaxBackupIndex" value="10"/>
+
+    <layout class="kz.greetgo.service_bus.controller.logging.MyLog4jLayout">
+      <param name="LoggerNameCut" value="1"/>
+    </layout>
+  </appender>
+
+  <appender name="QR" class="org.apache.log4j.RollingFileAppender">
+    <param name="File"
+      value="${user.home}/aix_service_bus.d/logs/trace/service/qr/qr_trace.log"/>
+    <param name="Threshold" value="TRACE"/>
+    <param name="Append" value="true"/>
+    <param name="MaxFileSize" value="50MB"/>
+    <param name="MaxBackupIndex" value="10"/>
+
+    <layout class="kz.greetgo.service_bus.controller.logging.MyLog4jLayout">
+      <param name="LoggerNameCut" value="1"/>
+    </layout>
+  </appender>
+
+  <appender name="SERVICE.NB_RATES" class="org.apache.log4j.RollingFileAppender">
+    <param name="File"
+      value="${user.home}/aix_service_bus.d/logs/trace/service/rates/kzt_trace.log"/>
+    <param name="Threshold" value="TRACE"/>
+    <param name="Append" value="true"/>
+    <param name="MaxFileSize" value="50MB"/>
+    <param name="MaxBackupIndex" value="10"/>
+
+    <layout class="kz.greetgo.service_bus.controller.logging.MyLog4jLayout">
+      <param name="LoggerNameCut" value="1"/>
+    </layout>
+  </appender>
+
+  <appender name="SERVICE.KYC" class="org.apache.log4j.RollingFileAppender">
+    <param name="File"
+      value="${user.home}/aix_service_bus.d/logs/trace/service/kyc.log"/>
+    <param name="Threshold" value="TRACE"/>
+    <param name="Append" value="true"/>
+    <param name="MaxFileSize" value="50MB"/>
+    <param name="MaxBackupIndex" value="10"/>
+
+    <layout class="kz.greetgo.service_bus.controller.logging.MyLog4jLayout">
+      <param name="LoggerNameCut" value="1"/>
+    </layout>
+  </appender>
+
+  <appender name="SERVICE.PUSH_NOTIFICATION" class="org.apache.log4j.RollingFileAppender">
+    <param name="File"
+      value="${user.home}/aix_service_bus.d/logs/trace/service/notification/push.log"/>
+    <param name="Threshold" value="TRACE"/>
+    <param name="Append" value="true"/>
+    <param name="MaxFileSize" value="50MB"/>
+    <param name="MaxBackupIndex" value="10"/>
+
+    <layout class="kz.greetgo.service_bus.controller.logging.MyLog4jLayout">
+      <param name="LoggerNameCut" value="1"/>
+    </layout>
+  </appender>
+
+  <appender name="SERVICE.EMAIL_NOTIFICATION" class="org.apache.log4j.RollingFileAppender">
+    <param name="File"
+      value="${user.home}/aix_service_bus.d/logs/trace/service/notification/email.log"/>
+    <param name="Threshold" value="TRACE"/>
+    <param name="Append" value="true"/>
+    <param name="MaxFileSize" value="50MB"/>
+    <param name="MaxBackupIndex" value="10"/>
+
+    <layout class="kz.greetgo.service_bus.controller.logging.MyLog4jLayout">
+      <param name="LoggerNameCut" value="1"/>
+    </layout>
+  </appender>
+
+  <appender name="SERVICE.SMS_NOTIFICATION" class="org.apache.log4j.RollingFileAppender">
+    <param name="File"
+      value="${user.home}/aix_service_bus.d/logs/trace/service/notification/sms.log"/>
+    <param name="Threshold" value="TRACE"/>
+    <param name="Append" value="true"/>
+    <param name="MaxFileSize" value="50MB"/>
+    <param name="MaxBackupIndex" value="10"/>
+
+    <layout class="kz.greetgo.service_bus.controller.logging.MyLog4jLayout">
+      <param name="LoggerNameCut" value="1"/>
+    </layout>
+  </appender>
+
+  <appender name="CACHE.DB" class="org.apache.log4j.RollingFileAppender">
+    <param name="File"
+      value="${user.home}/aix_service_bus.d/logs/trace/cache/db_cache.log"/>
+    <param name="Threshold" value="TRACE"/>
+    <param name="Append" value="true"/>
+    <param name="MaxFileSize" value="50MB"/>
+    <param name="MaxBackupIndex" value="10"/>
+
+    <layout class="kz.greetgo.service_bus.controller.logging.MyLog4jLayout">
+      <param name="LoggerNameCut" value="1"/>
+    </layout>
+  </appender>
+
+
+  <category name="org.apache">
+    <priority value="INFO"/>
+  </category>
+
+  <category name="TRACE">
+    <priority value="TRACE"/>
+  </category>
+
+  <category name="SQL">
+    <priority value="TRACE"/>
+  </category>
+
+  <category name="DIRECT_SQL">
+    <priority value="TRACE"/>
+  </category>
+
+  <category name="SERVICE.MARKET_WATCH">
+    <priority value="TRACE"/>
+    <appender-ref ref="SERVICE.MARKET_WATCH"/>
+  </category>
+  <category name="SERVICE.WEB_ADMIN">
+    <priority value="TRACE"/>
+    <appender-ref ref="SERVICE.WEB_ADMIN"/>
+  </category>
+
+  <category name="SERVICE.INDEXES">
+    <priority value="TRACE"/>
+    <appender-ref ref="SERVICE.INDEXES"/>
+  </category>
+
+  <category name="SERVICE.AIX">
+    <priority value="TRACE"/>
+    <appender-ref ref="SERVICE.AIX"/>
+
+  </category>
+
+  <category name="SERVICE.ACS">
+    <priority value="TRACE"/>
+    <appender-ref ref="SERVICE.ACS"/>
+  </category>
+
+  <category name="SERVICE.CSD">
+    <priority value="TRACE"/>
+    <appender-ref ref="SERVICE.CSD"/>
+  </category>
+
+  <category name="MIGRATION.CSD">
+    <priority value="TRACE"/>
+    <appender-ref ref="MIGRATION.CSD"/>
+  </category>
+
+  <category name="POST.MIGRATION">
+    <priority value="TRACE"/>
+    <appender-ref ref="POST.MIGRATION"/>
+  </category>
+
+  <category name="QR">
+    <priority value="TRACE"/>
+    <appender-ref ref="QR"/>
+  </category>
+
+  <category name="SERVICE.NB_RATES">
+    <priority value="TRACE"/>
+    <appender-ref ref="SERVICE.NB_RATES"/>
+  </category>
+
+  <category name="CACHE.DB">
+    <priority value="TRACE"/>
+    <appender-ref ref="CACHE.DB"/>
+  </category>
+
+  <category name="SERVICE.KYC">
+    <priority value="TRACE"/>
+    <appender-ref ref="SERVICE.KYC"/>
+  </category>
+
+  <category name="SERVICE.PUSH_NOTIFICATION">
+    <priority value="TRACE"/>
+    <appender-ref ref="SERVICE.PUSH_NOTIFICATION"/>
+  </category>
+
+  <category name="SERVICE.EMAIL_NOTIFICATION">
+    <priority value="TRACE"/>
+    <appender-ref ref="SERVICE.EMAIL_NOTIFICATION"/>
+  </category>
+
+  <category name="SERVICE.SMS_NOTIFICATION">
+    <priority value="TRACE"/>
+    <appender-ref ref="SERVICE.SMS_NOTIFICATION"/>
+  </category>
+
+  <root>
+    <priority value="INFO"/>
+    <appender-ref ref="SERVER"/>
+    <appender-ref ref="CONSOLE"/>
+  </root>
+
+</log4j:configuration>

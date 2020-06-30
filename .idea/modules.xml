@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/kz.nu.carpet_cleaner.carpet_cleaner.iml" filepath="$PROJECT_DIR$/.idea/modules/kz.nu.carpet_cleaner.carpet_cleaner.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/carpet_cleaner.client/kz.nu.carpet_cleaner.carpet_cleaner.client.iml" filepath="$PROJECT_DIR$/.idea/modules/carpet_cleaner.client/kz.nu.carpet_cleaner.carpet_cleaner.client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/carpet_cleaner.client/kz.nu.carpet_cleaner.carpet_cleaner.client.main.iml" filepath="$PROJECT_DIR$/.idea/modules/carpet_cleaner.client/kz.nu.carpet_cleaner.carpet_cleaner.client.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/carpet_cleaner.client/kz.nu.carpet_cleaner.carpet_cleaner.client.test.iml" filepath="$PROJECT_DIR$/.idea/modules/carpet_cleaner.client/kz.nu.carpet_cleaner.carpet_cleaner.client.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/carpet_cleaner.controller/kz.nu.carpet_cleaner.carpet_cleaner.controller.iml" filepath="$PROJECT_DIR$/.idea/modules/carpet_cleaner.controller/kz.nu.carpet_cleaner.carpet_cleaner.controller.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/carpet_cleaner.controller/kz.nu.carpet_cleaner.carpet_cleaner.controller.main.iml" filepath="$PROJECT_DIR$/.idea/modules/carpet_cleaner.controller/kz.nu.carpet_cleaner.carpet_cleaner.controller.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/carpet_cleaner.controller/kz.nu.carpet_cleaner.carpet_cleaner.controller.test.iml" filepath="$PROJECT_DIR$/.idea/modules/carpet_cleaner.controller/kz.nu.carpet_cleaner.carpet_cleaner.controller.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/kz.nu.carpet_cleaner.carpet_cleaner.main.iml" filepath="$PROJECT_DIR$/.idea/modules/kz.nu.carpet_cleaner.carpet_cleaner.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/carpet_cleaner.register/kz.nu.carpet_cleaner.carpet_cleaner.register.iml" filepath="$PROJECT_DIR$/.idea/modules/carpet_cleaner.register/kz.nu.carpet_cleaner.carpet_cleaner.register.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/carpet_cleaner.register/kz.nu.carpet_cleaner.carpet_cleaner.register.main.iml" filepath="$PROJECT_DIR$/.idea/modules/carpet_cleaner.register/kz.nu.carpet_cleaner.carpet_cleaner.register.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/carpet_cleaner.register/kz.nu.carpet_cleaner.carpet_cleaner.register.test.iml" filepath="$PROJECT_DIR$/.idea/modules/carpet_cleaner.register/kz.nu.carpet_cleaner.carpet_cleaner.register.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/kz.nu.carpet_cleaner.carpet_cleaner.test.iml" filepath="$PROJECT_DIR$/.idea/modules/kz.nu.carpet_cleaner.carpet_cleaner.test.iml" />
+    </modules>
+  </component>
+</project>
