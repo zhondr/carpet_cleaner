@@ -1,5 +1,8 @@
+/**
+ * @license
+ * Copyright Akveo. All Rights Reserved.
+ * Licensed under the MIT License. See License.txt in the project root for license information.
+ */
 export const environment = {
   production: true,
-  environment: 'PROD',
-  host: 'http://192.168.26.239:8080/'
 };

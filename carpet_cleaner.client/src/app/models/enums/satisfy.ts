@@ -1,5 +1,0 @@
-export enum Satisfy {
-  UNSATISFIED = "UNSATISFIED",
-  NEUTRAL = "NEUTRAL",
-  SATISFIED = "SATISFIED"
-}

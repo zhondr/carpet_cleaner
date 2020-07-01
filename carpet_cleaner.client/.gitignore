@@ -1,15 +1,7 @@
-# See http://help.github.com/ignore-files/ for more about ignoring files.
-
 # compiled output
 /dist
 /tmp
 /out-tsc
-/app-builds
-/release
-*.js
-src/**/*.js
-!karma.conf.js
-*.js.map
 
 # dependencies
 /node_modules
@@ -25,7 +17,7 @@ src/**/*.js
 
 # IDE - VSCode
 .vscode/*
-.vscode/settings.json
+!.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
@@ -38,10 +30,10 @@ src/**/*.js
 npm-debug.log
 testem.log
 /typings
+/docs
 
 # e2e
 /e2e/*.js
-!/e2e/protractor.conf.js
 /e2e/*.map
 
 # System Files
