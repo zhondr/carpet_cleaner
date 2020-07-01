@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-
-import { MENU_ITEMS } from './main-menu';
+import {NbMenuItem} from "@nebular/theme";
+import {TranslateService} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-main',
@@ -12,7 +12,18 @@ import { MENU_ITEMS } from './main-menu';
     </ngx-one-column-layout>
   `,
 })
+
+
 export class MainComponent {
 
-  menu = MENU_ITEMS;
+  MENU_ITEMS: NbMenuItem[] = [
+    {
+      title: "Order",
+      icon: 'grid-outline',
+      link: '/order',
+      home: true
+    }
+  ];
+
+  menu = this.MENU_ITEMS;
 }
