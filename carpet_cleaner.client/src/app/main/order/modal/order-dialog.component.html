@@ -1,0 +1,43 @@
+<nb-card>
+  <nb-card-header>{{ 'order'| translate }}</nb-card-header>
+  <nb-card-body>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="form-group">
+          <label for="inputFirstName" class="label">{{'surname'|translate}}</label>
+          <input type="text" nbInput fullWidth id="inputFirstName" [(ngModel)]="data.surname" placeholder="{{'surname'|translate}}">
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="form-group">
+          <label for="inputLastName" class="label">{{'name'| translate}}</label>
+          <input type="text" nbInput fullWidth id="inputLastName" [(ngModel)]="data.name" placeholder="{{'name'| translate}}">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="form-group">
+          <label for="inputEmail" class="label">{{'phoneNumber'|translate}}</label>
+          <input type="email" nbInput fullWidth id="inputEmail" [(ngModel)]="data.phoneNumber" placeholder="{{'phoneNumber'|translate}}">
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="form-group">
+          <label for="inputWebsite" class="label">{{'email'|translate}}</label>
+          <input type="text" nbInput fullWidth id="inputWebsite" [(ngModel)]="data.email" placeholder="{{'email'|translate}}">
+        </div>
+      </div>
+    </div>
+  </nb-card-body>
+  <nb-card-footer>
+    <div class="row justify-content-center">
+      <div class="col-sm-2">
+        <button nbButton hero status="primary" (click)="submit()">{{ 'submit'| translate}}</button>
+      </div>
+      <div  class="col-sm-2">
+        <button nbButton hero status="primary" (click)="dismiss()">{{ 'dismiss'| translate}}</button>
+      </div>
+    </div>
+  </nb-card-footer>
+</nb-card>
