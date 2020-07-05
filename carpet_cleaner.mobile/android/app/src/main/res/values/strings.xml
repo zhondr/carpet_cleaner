@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">carpet_cleaner.mobile</string>
+    <string name="title_activity_main">carpet_cleaner.mobile</string>
+    <string name="package_name">kz.nu.carpet_cleaner</string>
+    <string name="custom_url_scheme">kz.nu.carpet_cleaner</string>
+</resources>

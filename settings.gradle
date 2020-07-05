@@ -7,5 +7,6 @@ pluginManagement {
 rootProject.name = 'carpet_cleaner'
 
 include "carpet_cleaner.client"
+include "carpet_cleaner.mobile"
 include "carpet_cleaner.controller"
 include "carpet_cleaner.register"

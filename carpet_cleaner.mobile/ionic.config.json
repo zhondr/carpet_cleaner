@@ -1,0 +1,8 @@
+{
+  "name": "carpet_cleaner.mobile",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}
