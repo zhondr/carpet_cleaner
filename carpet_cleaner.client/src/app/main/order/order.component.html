@@ -8,13 +8,14 @@
     <button nbButton hero status="primary" (click)="add()">{{'add'|translate}}</button>
     <nb-list>
       <nb-list-item class="item" *ngFor="let item of source">
-        <span>{{ item.lastName }}</span>
+        <span>{{ item.name }}</span>
+        <span>{{ item.surname }}</span>
         <span>{{ item.email }}</span>
         <span>
-          <span><i class="nb-edit"></i></span>
-          <span><i class="nb-close"></i></span>
+          <span class="tap-button" (click)="edit(item.id)"><i class="nb-edit"></i></span>
+          <span class="tap-button" (click)="delete(item.id)"><i class="nb-close"></i></span>
         </span>
-      </nb-list-item>
+      </nb-list-item >
     </nb-list>
   </nb-card-body>
 </nb-card>

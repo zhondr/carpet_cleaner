@@ -19,18 +19,18 @@ export class OrderService {
 
   deleteOrder(id: string) {
     let endPoint = this.apiPoint + "/delete";
-    return this.api.post(endPoint, {id:id}).toPromise()
+    return this.api.post(endPoint, id).toPromise()
       .then( res=>res);
   }
 
   orderDetail(id: string) {
     let endPoint = this.apiPoint + "/detail";
-    return this.api.post(endPoint, {id:id}).toPromise()
+    return this.api.post(endPoint, id).toPromise()
       .then( res=>res);
   }
 
   saveOrder(data: any) {
-    let endPoint = this.apiPoint + "/detail";
+    let endPoint = this.apiPoint + "/save";
     return this.api.post(endPoint, data).toPromise()
       .then( res=>res);
   }

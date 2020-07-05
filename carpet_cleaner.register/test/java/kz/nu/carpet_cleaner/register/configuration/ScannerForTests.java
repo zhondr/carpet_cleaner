@@ -1,11 +1,11 @@
-package kz.greetgo.aix_service_bus.register.configuration;
+package kz.nu.carpet_cleaner.register.configuration;
 
-import kz.greetgo.aix_service_bus.register.configurations.beans.all.AppBeanScanner;
+import kz.nu.carpet_cleaner.register.configurations.beans.all.AppBeanScanner;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Import;
 
 @Import({
     AppBeanScanner.class,
 })
-@ComponentScan(basePackages = "kz.greetgo.aix_service_bus.register")
+@ComponentScan(basePackages = "kz.nu.carpet_cleaner.register")
 public class ScannerForTests {}

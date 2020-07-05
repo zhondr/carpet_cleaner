@@ -1,4 +1,4 @@
-package kz.greetgo.aix_service_bus.register.util;
+package kz.nu.carpet_cleaner.register.util;
 
 import java.math.BigDecimal;
 import java.util.Calendar;

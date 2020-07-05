@@ -7,32 +7,32 @@
     <param name="Target" value="System.out"/>
     <param name="Threshold" value="DEBUG"/>
 
-    <layout class="kz.greetgo.service_bus.controller.logging.MyLog4jLayout">
+    <layout class="kz.nu.carpet_cleaner.controller.logging.MyLog4jLayout">
       <param name="LoggerNameCut" value="2"/>
     </layout>
   </appender>
 
 
   <appender name="SERVER" class="org.apache.log4j.RollingFileAppender">
-    <param name="File" value="${user.home}/aix_service_bus.d/logs/server.log"/>
+    <param name="File" value="${user.home}/carpet_cleaner.d/logs/server.log"/>
     <param name="Threshold" value="INFO"/>
     <param name="Append" value="true"/>
     <param name="MaxFileSize" value="100MB"/>
     <param name="MaxBackupIndex" value="100"/>
 
-    <layout class="kz.greetgo.service_bus.controller.logging.MyLog4jLayout">
+    <layout class="kz.nu.carpet_cleaner.controller.logging.MyLog4jLayout">
       <param name="LoggerNameCut" value="0"/>
     </layout>
   </appender>
 
   <appender name="SERVICE.MARKET_WATCH" class="org.apache.log4j.RollingFileAppender">
-    <param name="File" value="${user.home}/aix_service_bus.d/logs/trace/service/market_watch/market_watch_trace.log"/>
+    <param name="File" value="${user.home}/carpet_cleaner.d/logs/trace/service/market_watch/market_watch_trace.log"/>
     <param name="Threshold" value="TRACE"/>
     <param name="Append" value="true"/>
     <param name="MaxFileSize" value="50MB"/>
     <param name="MaxBackupIndex" value="7"/>
 
-    <layout class="kz.greetgo.service_bus.controller.logging.MyLog4jLayout">
+    <layout class="kz.nu.carpet_cleaner.controller.logging.MyLog4jLayout">
       <param name="LoggerNameCut" value="1"/>
     </layout>
   </appender>
@@ -44,7 +44,7 @@
     <param name="MaxFileSize" value="50MB"/>
     <param name="MaxBackupIndex" value="7"/>
 
-    <layout class="kz.greetgo.service_bus.controller.logging.MyLog4jLayout">
+    <layout class="kz.nu.carpet_cleaner.controller.logging.MyLog4jLayout">
       <param name="LoggerNameCut" value="1"/>
     </layout>
   </appender>
@@ -56,7 +56,7 @@
     <param name="MaxFileSize" value="50MB"/>
     <param name="MaxBackupIndex" value="7"/>
 
-    <layout class="kz.greetgo.service_bus.controller.logging.MyLog4jLayout">
+    <layout class="kz.nu.carpet_cleaner.controller.logging.MyLog4jLayout">
       <param name="LoggerNameCut" value="1"/>
     </layout>
   </appender>
@@ -68,7 +68,7 @@
     <param name="MaxFileSize" value="50MB"/>
     <param name="MaxBackupIndex" value="7"/>
 
-    <layout class="kz.greetgo.service_bus.controller.logging.MyLog4jLayout">
+    <layout class="kz.nu.carpet_cleaner.controller.logging.MyLog4jLayout">
       <param name="LoggerNameCut" value="1"/>
     </layout>
   </appender>
@@ -80,7 +80,7 @@
     <param name="MaxFileSize" value="50MB"/>
     <param name="MaxBackupIndex" value="7"/>
 
-    <layout class="kz.greetgo.service_bus.controller.logging.MyLog4jLayout">
+    <layout class="kz.nu.carpet_cleaner.controller.logging.MyLog4jLayout">
       <param name="LoggerNameCut" value="1"/>
     </layout>
   </appender>
@@ -92,7 +92,7 @@
     <param name="MaxFileSize" value="50MB"/>
     <param name="MaxBackupIndex" value="10"/>
 
-    <layout class="kz.greetgo.service_bus.controller.logging.MyLog4jLayout">
+    <layout class="kz.nu.carpet_cleaner.controller.logging.MyLog4jLayout">
       <param name="LoggerNameCut" value="1"/>
     </layout>
   </appender>
@@ -104,7 +104,7 @@
     <param name="MaxFileSize" value="50MB"/>
     <param name="MaxBackupIndex" value="10"/>
 
-    <layout class="kz.greetgo.service_bus.controller.logging.MyLog4jLayout">
+    <layout class="kz.nu.carpet_cleaner.controller.logging.MyLog4jLayout">
       <param name="LoggerNameCut" value="1"/>
     </layout>
   </appender>
@@ -117,7 +117,7 @@
     <param name="MaxFileSize" value="50MB"/>
     <param name="MaxBackupIndex" value="10"/>
 
-    <layout class="kz.greetgo.service_bus.controller.logging.MyLog4jLayout">
+    <layout class="kz.nu.carpet_cleaner.controller.logging.MyLog4jLayout">
       <param name="LoggerNameCut" value="1"/>
     </layout>
   </appender>
@@ -130,7 +130,7 @@
     <param name="MaxFileSize" value="50MB"/>
     <param name="MaxBackupIndex" value="10"/>
 
-    <layout class="kz.greetgo.service_bus.controller.logging.MyLog4jLayout">
+    <layout class="kz.nu.carpet_cleaner.controller.logging.MyLog4jLayout">
       <param name="LoggerNameCut" value="1"/>
     </layout>
   </appender>
@@ -143,7 +143,7 @@
     <param name="MaxFileSize" value="50MB"/>
     <param name="MaxBackupIndex" value="10"/>
 
-    <layout class="kz.greetgo.service_bus.controller.logging.MyLog4jLayout">
+    <layout class="kz.nu.carpet_cleaner.controller.logging.MyLog4jLayout">
       <param name="LoggerNameCut" value="1"/>
     </layout>
   </appender>
@@ -156,7 +156,7 @@
     <param name="MaxFileSize" value="50MB"/>
     <param name="MaxBackupIndex" value="10"/>
 
-    <layout class="kz.greetgo.service_bus.controller.logging.MyLog4jLayout">
+    <layout class="kz.nu.carpet_cleaner.controller.logging.MyLog4jLayout">
       <param name="LoggerNameCut" value="1"/>
     </layout>
   </appender>
@@ -169,7 +169,7 @@
     <param name="MaxFileSize" value="50MB"/>
     <param name="MaxBackupIndex" value="10"/>
 
-    <layout class="kz.greetgo.service_bus.controller.logging.MyLog4jLayout">
+    <layout class="kz.nu.carpet_cleaner.controller.logging.MyLog4jLayout">
       <param name="LoggerNameCut" value="1"/>
     </layout>
   </appender>
@@ -182,7 +182,7 @@
     <param name="MaxFileSize" value="50MB"/>
     <param name="MaxBackupIndex" value="10"/>
 
-    <layout class="kz.greetgo.service_bus.controller.logging.MyLog4jLayout">
+    <layout class="kz.nu.carpet_cleaner.controller.logging.MyLog4jLayout">
       <param name="LoggerNameCut" value="1"/>
     </layout>
   </appender>
@@ -195,7 +195,7 @@
     <param name="MaxFileSize" value="50MB"/>
     <param name="MaxBackupIndex" value="10"/>
 
-    <layout class="kz.greetgo.service_bus.controller.logging.MyLog4jLayout">
+    <layout class="kz.nu.carpet_cleaner.controller.logging.MyLog4jLayout">
       <param name="LoggerNameCut" value="1"/>
     </layout>
   </appender>
@@ -208,7 +208,7 @@
     <param name="MaxFileSize" value="50MB"/>
     <param name="MaxBackupIndex" value="10"/>
 
-    <layout class="kz.greetgo.service_bus.controller.logging.MyLog4jLayout">
+    <layout class="kz.nu.carpet_cleaner.controller.logging.MyLog4jLayout">
       <param name="LoggerNameCut" value="1"/>
     </layout>
   </appender>

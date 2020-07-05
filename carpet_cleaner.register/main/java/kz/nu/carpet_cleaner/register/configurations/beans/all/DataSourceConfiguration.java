@@ -32,27 +32,6 @@ public class DataSourceConfiguration {
     return pool;
   }
 
-
-  @Bean("AixMySql")
-  public DataSource mysqlDataSource() {
-
-    HikariDataSource pool = new HikariDataSource();
-
-    pool.setDriverClassName("com.mysql.jdbc.Driver");
-    pool.setJdbcUrl(dbConfig.wordPressUrl());
-    pool.setUsername(dbConfig.wordPressUsername());
-    pool.setPassword(dbConfig.wordPressPassword());
-    pool.setMaximumPoolSize(3);
-
-    return pool;
-  }
-
-
-  @Bean("aix")
-  public JdbcTemplate aixJdbcTemplate() {
-    return new JdbcTemplate(mysqlDataSource());
-  }
-
   @Primary
   @Bean
   public JdbcTemplate jdbcTemplate() {

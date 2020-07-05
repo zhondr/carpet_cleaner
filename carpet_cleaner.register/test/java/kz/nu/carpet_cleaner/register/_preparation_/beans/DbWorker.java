@@ -1,4 +1,4 @@
-package kz.greetgo.aix_service_bus.register._preparation_.beans;
+package kz.nu.carpet_cleaner.register._preparation_.beans;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -10,11 +10,11 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Properties;
-import kz.greetgo.service_bus.controller.AppFolderPath;
-import kz.greetgo.aix_service_bus.register.configurations.beans.all.liquibase.DbParams;
-import kz.greetgo.aix_service_bus.register.hotconfig.DbConfig;
 import kz.greetgo.conf.hot.DefaultStrValue;
 import kz.greetgo.conf.sys_params.SysParams;
+import kz.nu.carpet_cleaner.controller.AppFolderPath;
+import kz.nu.carpet_cleaner.register.configurations.beans.all.liquibase.DbParams;
+import kz.nu.carpet_cleaner.register.hotconfig.DbConfig;
 import org.postgresql.util.PSQLException;
 
 public class DbWorker {

@@ -24,7 +24,7 @@ public class AppFolderPath {
 
 
   public static String projectName() {
-    return "aix_service_bus";
+    return "carpet_cleaner";
   }
 
   public static Path do_not_run_liquibase() {
@@ -33,18 +33,6 @@ public class AppFolderPath {
 
   public static String schedulerConfDir() {
     return appDir() + "/scheduler_conf";
-  }
-
-  public static String twilioSMSSentDir() {
-    return twilioSMSDir() + "/sent";
-  }
-
-  public static String twilioSMSErrorDir() {
-    return twilioSMSDir() + "/error";
-  }
-
-  public static String twilioSMSSendDir() {
-    return twilioSMSDir() + "/send";
   }
 
 }

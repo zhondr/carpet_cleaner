@@ -1,4 +1,5 @@
 export class OrderRecord {
+  id:string;
   name:string;
   surname:string;
   patronymic:string;

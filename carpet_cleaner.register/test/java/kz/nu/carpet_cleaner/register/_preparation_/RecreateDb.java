@@ -1,7 +1,7 @@
-package kz.greetgo.aix_service_bus.register._preparation_;
+package kz.nu.carpet_cleaner.register._preparation_;
 
-import kz.greetgo.aix_service_bus.register._preparation_.beans.DbWorker;
-import kz.greetgo.aix_service_bus.register.configurations.beans.all.liquibase.PostgresLiquibase;
+import kz.nu.carpet_cleaner.register._preparation_.beans.DbWorker;
+import kz.nu.carpet_cleaner.register.configurations.beans.all.liquibase.PostgresLiquibase;
 
 public class RecreateDb {
 

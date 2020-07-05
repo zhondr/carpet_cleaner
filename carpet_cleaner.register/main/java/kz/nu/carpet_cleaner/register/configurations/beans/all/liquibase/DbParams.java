@@ -6,12 +6,8 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.nio.charset.Charset;
 import java.util.Properties;
-import kz.greetgo.aix_service_bus.register.hotconfig.DbConfig;
 import kz.nu.carpet_cleaner.controller.AppFolderPath;
-
-/**
- * Created by Kasyanov Maxim on 8/26/2017.
- */
+import kz.nu.carpet_cleaner.register.hotconfig.DbConfig;
 
 public class DbParams {
 

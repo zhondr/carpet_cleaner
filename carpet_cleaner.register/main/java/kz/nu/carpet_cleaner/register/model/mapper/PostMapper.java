@@ -1,9 +1,10 @@
 package kz.nu.carpet_cleaner.register.model.mapper;
 
+import kz.nu.carpet_cleaner.register.model.Post;
+import org.springframework.jdbc.core.RowMapper;
+
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import kz.greetgo.aix_service_bus.register.model.Post;
-import org.springframework.jdbc.core.RowMapper;
 
 public class PostMapper implements RowMapper<Post> {
 

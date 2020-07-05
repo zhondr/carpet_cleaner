@@ -5,12 +5,6 @@
 
   <!-- v001 -->
   <include file="liquibase/v001/000_common.xml"/>
-  <include file="liquibase/v001/001_aix_post.xml"/>
-  <include file="liquibase/v001/002_csd_migration.xml"/>
-  <include file="liquibase/v001/003_alter_column_sms_log.xml"/>
-  <include file="liquibase/v001/004_kzt_rate.xml"/>
-  <include file="liquibase/v001/005_indexes.xml"/>
-  <include file="liquibase/v001/006_indexes_create_index.xml"/>
-  <include file="liquibase/v001/007_db_comments.xml"/>
+  <include file="liquibase/v001/001_carpet_order.xml"/>
 
 </databaseChangeLog>

@@ -3,8 +3,17 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
 
-  <!-- v001 -->
-  <include file="liquibase/v001/000_common.xml"/>
-  <include file="liquibase/v001/001_carpet_order.xml"/>
+  <changeSet author="stursyn" id="order_table">
+    <sql endDelimiter=";;"><![CDATA[
+      create table cleaner_order (
+        id varchar(100) not null primary key,
+        name varchar(100),
+        surname varchar(100),
+        phoneNumber varchar(100),
+        email varchar(100)
+       );;
+       
+    ]]></sql>
+  </changeSet>
 
 </databaseChangeLog>

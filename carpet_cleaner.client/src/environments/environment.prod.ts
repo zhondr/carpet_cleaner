@@ -5,5 +5,5 @@
  */
 export const environment = {
   production: true,
-  base: ''
+  base: 'localhost:8484/api'
 };

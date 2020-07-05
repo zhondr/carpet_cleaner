@@ -1,0 +1,23 @@
+version: "2.3"
+
+services:
+
+  postgres:
+    image: postgres:12.0
+    mem_limit: 200M
+    container_name: carpet_cleaner_postgres
+    restart: always
+    ports:
+      - "25432:5432"
+    volumes:
+      - ./postgres-init:/docker-entrypoint-initdb.d
+
+  keycloak:
+    image: jboss/keycloak
+    container_name: carpet_cleaner_keycloak
+    restart: always
+    ports:
+      - "18080:8080"
+    environment:
+      KEYCLOAK_USER: admin
+      KEYCLOAK_PASSWORD: admin
